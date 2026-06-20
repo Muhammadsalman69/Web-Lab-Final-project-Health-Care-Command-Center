@@ -1,0 +1,24 @@
+# MediCore Hospital System - Simple Explanation
+
+## What is this project?
+This is a web application created for MediCore City Hospital. It helps the hospital move away from paper records and WhatsApp messages. 
+
+## What does it do?
+The system keeps track of four main things:
+1. **Patients:** Who they are, their contact details, and their medical history.
+2. **Doctors:** Their names, specializations, and whether they are available.
+3. **Admissions:** When a patient is admitted to the hospital, which ward they are placed in, and which doctor is assigned to them.
+4. **Dashboard:** A central "command center" that shows live statistics like how many doctors are on duty, how many patients are admitted, and a visual chart of the hospital's wards.
+
+## How it works under the hood
+* **ASP.NET Core (C#):** This is the engine running the backend logic. It takes requests from the browser and processes them.
+* **SQLite Database (`app.db`):** This is the digital filing cabinet. All the patient, doctor, and admission records are saved directly into this single file.
+* **Razor Views (`.cshtml` files):** These are the templates that generate the web pages you see. They mix regular HTML with C# code so they can display live data from the database.
+* **Bootstrap:** This is the CSS framework we used to make the application look modern, colorful, and work nicely on different screen sizes.
+
+## How to run it
+You cannot run this by double-clicking an HTML file because it needs a server to talk to the database.
+To run it, you must open the terminal/command prompt in this folder and type:
+`dotnet run`
+
+Then, open your web browser and go to the link it provides (usually `http://localhost:5039`).
